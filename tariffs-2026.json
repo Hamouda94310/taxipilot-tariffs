@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "2026.1",
+  "timezone": "Europe/Paris",
+  "effectiveFrom": "2026-01-01T00:00:00+01:00",
+  "effectiveUntil": "2026-12-31T23:59:59+01:00",
+  "source": {
+    "label": "Configuration initiale correspondant au moteur tarifaire de Taxi Pilot Build 62",
+    "url": ""
+  },
+  "priority": {
+    "publicHolidayOverridesSunday": true
+  },
+  "zones": {
+    "urban": {
+      "publicHoliday": [
+        { "start": "00:00", "end": "24:00", "tariff": "B" }
+      ],
+      "sunday": [
+        { "start": "00:00", "end": "07:00", "tariff": "C" },
+        { "start": "07:00", "end": "24:00", "tariff": "B" }
+      ],
+      "weekday": [
+        { "start": "00:00", "end": "10:00", "tariff": "B" },
+        { "start": "10:00", "end": "17:00", "tariff": "A" },
+        { "start": "17:00", "end": "24:00", "tariff": "B" }
+      ]
+    },
+    "suburban": {
+      "publicHoliday": [
+        { "start": "00:00", "end": "24:00", "tariff": "C" }
+      ],
+      "sunday": [
+        { "start": "00:00", "end": "24:00", "tariff": "C" }
+      ],
+      "weekday": [
+        { "start": "00:00", "end": "07:00", "tariff": "C" },
+        { "start": "07:00", "end": "19:00", "tariff": "B" },
+        { "start": "19:00", "end": "24:00", "tariff": "C" }
+      ]
+    },
+    "beyondSuburban": {
+      "allDays": [
+        { "start": "00:00", "end": "24:00", "tariff": "C" }
+      ]
+    },
+    "unknown": {
+      "allDays": [
+        { "start": "00:00", "end": "24:00", "tariff": "C" }
+      ]
+    }
+  },
+  "holidays": {
+    "fixed": [
+      { "month": 1, "day": 1, "name": "Jour de l’An" },
+      { "month": 5, "day": 1, "name": "Fête du Travail" },
+      { "month": 5, "day": 8, "name": "Victoire 1945" },
+      { "month": 7, "day": 14, "name": "Fête nationale" },
+      { "month": 8, "day": 15, "name": "Assomption" },
+      { "month": 11, "day": 1, "name": "Toussaint" },
+      { "month": 11, "day": 11, "name": "Armistice" },
+      { "month": 12, "day": 25, "name": "Noël" }
+    ],
+    "movableFromEaster": [
+      { "offsetDays": 1, "name": "Lundi de Pâques" },
+      { "offsetDays": 39, "name": "Ascension" },
+      { "offsetDays": 50, "name": "Lundi de Pentecôte" }
+    ]
+  }
+}
