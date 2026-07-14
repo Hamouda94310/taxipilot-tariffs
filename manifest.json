@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "currentRuleVersion": "2026.1",
-  "publishedAt": "2026-07-14T12:00:00+02:00",
+  "currentRuleVersion": "2026.2",
+  "publishedAt": "2026-07-14T15:00:00+02:00",
   "effectiveFrom": "2026-01-01T00:00:00+01:00",
   "configurationFile": "tariffs-2026.json"
 }
