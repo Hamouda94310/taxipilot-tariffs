@@ -1,15 +1,20 @@
 {
   "schemaVersion": 1,
-  "ruleVersion": "2026.1",
+  "ruleVersion": "2026.2",
   "timezone": "Europe/Paris",
   "effectiveFrom": "2026-01-01T00:00:00+01:00",
   "effectiveUntil": "2026-12-31T23:59:59+01:00",
   "source": {
-    "label": "Configuration initiale correspondant au moteur tarifaire de Taxi Pilot Build 62",
-    "url": ""
+    "label": "Configuration Taxi Pilot 2026 avec montants kilométriques et horaires",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053228231"
   },
   "priority": {
     "publicHolidayOverridesSunday": true
+  },
+  "rates": {
+    "A": { "kilometer": 1.30, "hour": 39.55 },
+    "B": { "kilometer": 1.66, "hour": 52.56 },
+    "C": { "kilometer": 1.76, "hour": 43.15 }
   },
   "zones": {
     "urban": {
